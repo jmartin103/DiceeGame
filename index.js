@@ -5,8 +5,11 @@ function generateRandomNumber(min, max) {
 var randomNumber1 = generateRandomNumber(1, 6);
 var randomNumber2 = generateRandomNumber(1, 6);
 
-document.getElementById("img1").setAttribute("src", "images/dice"+randomNumber1+".png");
-document.getElementById("img2").setAttribute("src", "images/dice"+randomNumber2+".png");
+var img1 = document.getElementById("img1");
+var img2 = document.getElementById("img2");
+
+img1.setAttribute("src", "images/dice"+randomNumber1+".png");
+img2.setAttribute("src", "images/dice"+randomNumber2+".png");
 
 var heading = document.getElementById("winner");
 
